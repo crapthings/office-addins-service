@@ -1,8 +1,13 @@
 import { render } from 'react-dom'
 import domready from 'domready'
 
-const Index = () => <h1>hello kitty</h1>
+const Index = () => <h1>
+  <a href='/resource.html' target='_blank'>hello kitty</a>
+</h1>
 
-domready(function () {
-  render(<Index />, document.getElementById('wrapper'))
-})
+Office.initialize = function () {
+  domready(function () {
+    console.log(Office)
+    render(<Index />, document.getElementById('wrapper'))
+  })
+}

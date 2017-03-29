@@ -16,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/crapthings/office-addins-service/issues"
   },
-  "homepage": "https://github.com/crapthings/office-addins-service#readme"
+  "homepage": "https://github.com/crapthings/office-addins-service#readme",
+  "dependencies": {
+    "cors": "^2.8.2",
+    "express": "^4.15.2",
+    "lodash": "^4.17.4"
+  }
 }
